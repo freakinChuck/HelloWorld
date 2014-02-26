@@ -10,4 +10,10 @@
 
 @interface fCViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UILabel *helloLabel;
+@property (nonatomic, retain) IBOutlet UITextField *nameTextField;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *typeSelector;
+
+ - (IBAction) sayHello:(id)sender;
+
 @end

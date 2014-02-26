@@ -14,6 +14,26 @@
 
 @implementation fCViewController
 
+@synthesize helloLabel;
+@synthesize nameTextField;
+@synthesize typeSelector;
+
+-(IBAction) sayHello:(id)sender
+{
+    NSString *name = nameTextField.text;
+    
+    if (name.length <= 0) {
+        name = @"World";
+    }
+    
+    if (typeSelector.selectedSegmentIndex == 0) {
+        helloLabel.Text = [NSString stringWithFormat: @"Hello %@ :-)", name] ;
+    }
+    else {
+        helloLabel.Text = [NSString stringWithFormat: @"Good bye %@ :-(", name] ;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
