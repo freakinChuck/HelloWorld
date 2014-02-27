@@ -7,6 +7,7 @@
 //
 
 #import "fCViewController.h"
+#import "fCThirdScreenViewController.h"
 
 @interface fCViewController ()
 
@@ -34,10 +35,41 @@
     }
 }
 
+-(IBAction) alertHello:(id)sender{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"MeldungTitel :-)" message:@"Is everybody having fun?? :-)" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", @"No", nil ];
+    
+    [message show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    //helloLabel.text = [NSString stringWithFormat: @"%1.0", (long)clickedButtonIndex];
+    switch (buttonIndex) {
+        case 0:
+            helloLabel.text = @"Cancel";
+            break;
+        case 1:
+            helloLabel.text = @"Good :-)";
+            break;
+        case 2:
+            helloLabel.text = @"Why not?";
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (IBAction)showThird:(id)sender{
+    fCThirdScreenViewController *controller = [[fCThirdScreenViewController alloc] init];
+    
+    [self presentViewController:controller animated:YES completion:nil];
+    //[self.navigationController pushViewController:controller animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.title = @"Gelbe View";
 }
 
 - (void)didReceiveMemoryWarning

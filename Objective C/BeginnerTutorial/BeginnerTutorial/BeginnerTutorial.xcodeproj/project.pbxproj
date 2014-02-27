@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A4AE5818BFA01500ABB1CA /* fCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A4AE5718BFA01500ABB1CA /* fCSecondViewController.m */; };
+		29A4AE5C18BFA70800ABB1CA /* fCThirdScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A4AE5A18BFA70800ABB1CA /* fCThirdScreenViewController.m */; };
+		29A4AE5D18BFA70800ABB1CA /* fCThirdScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A4AE5B18BFA70800ABB1CA /* fCThirdScreenViewController.xib */; };
 		29B7138A18BD4C7300B5BD86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B7138918BD4C7300B5BD86 /* Foundation.framework */; };
 		29B7138C18BD4C7300B5BD86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B7138B18BD4C7300B5BD86 /* CoreGraphics.framework */; };
 		29B7138E18BD4C7300B5BD86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B7138D18BD4C7300B5BD86 /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29A4AE5618BFA01500ABB1CA /* fCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fCSecondViewController.h; sourceTree = "<group>"; };
+		29A4AE5718BFA01500ABB1CA /* fCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fCSecondViewController.m; sourceTree = "<group>"; };
+		29A4AE5918BFA70800ABB1CA /* fCThirdScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fCThirdScreenViewController.h; path = ../fCThirdScreenViewController.h; sourceTree = "<group>"; };
+		29A4AE5A18BFA70800ABB1CA /* fCThirdScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fCThirdScreenViewController.m; path = ../fCThirdScreenViewController.m; sourceTree = "<group>"; };
+		29A4AE5B18BFA70800ABB1CA /* fCThirdScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = fCThirdScreenViewController.xib; path = ../fCThirdScreenViewController.xib; sourceTree = "<group>"; };
 		29B7138618BD4C7300B5BD86 /* BeginnerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeginnerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B7138918BD4C7300B5BD86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		29B7138B18BD4C7300B5BD86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +120,9 @@
 		29B7138F18BD4C7300B5BD86 /* BeginnerTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				29A4AE5B18BFA70800ABB1CA /* fCThirdScreenViewController.xib */,
+				29A4AE5A18BFA70800ABB1CA /* fCThirdScreenViewController.m */,
+				29A4AE5918BFA70800ABB1CA /* fCThirdScreenViewController.h */,
 				29B7139818BD4C7300B5BD86 /* fCAppDelegate.h */,
 				29B7139918BD4C7300B5BD86 /* fCAppDelegate.m */,
 				29B7139B18BD4C7300B5BD86 /* Main.storyboard */,
@@ -119,6 +130,8 @@
 				29B7139F18BD4C7300B5BD86 /* fCViewController.m */,
 				29B713A118BD4C7300B5BD86 /* Images.xcassets */,
 				29B7139018BD4C7300B5BD86 /* Supporting Files */,
+				29A4AE5618BFA01500ABB1CA /* fCSecondViewController.h */,
+				29A4AE5718BFA01500ABB1CA /* fCSecondViewController.m */,
 			);
 			path = BeginnerTutorial;
 			sourceTree = "<group>";
@@ -232,6 +245,7 @@
 				29B713A218BD4C7300B5BD86 /* Images.xcassets in Resources */,
 				29B7139418BD4C7300B5BD86 /* InfoPlist.strings in Resources */,
 				29B7139D18BD4C7300B5BD86 /* Main.storyboard in Resources */,
+				29A4AE5D18BFA70800ABB1CA /* fCThirdScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A4AE5C18BFA70800ABB1CA /* fCThirdScreenViewController.m in Sources */,
 				29B7139618BD4C7300B5BD86 /* main.m in Sources */,
 				29B7139A18BD4C7300B5BD86 /* fCAppDelegate.m in Sources */,
 				29B713A018BD4C7300B5BD86 /* fCViewController.m in Sources */,
+				29A4AE5818BFA01500ABB1CA /* fCSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +479,7 @@
 				29B713BA18BD4C7300B5BD86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29B713BB18BD4C7300B5BD86 /* Build configuration list for PBXNativeTarget "BeginnerTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +488,7 @@
 				29B713BD18BD4C7300B5BD86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

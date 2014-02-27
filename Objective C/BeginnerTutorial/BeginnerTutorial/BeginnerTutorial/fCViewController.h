@@ -14,6 +14,8 @@
 @property (nonatomic, retain) IBOutlet UITextField *nameTextField;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *typeSelector;
 
- - (IBAction) sayHello:(id)sender;
+- (IBAction) sayHello:(id)sender;
+- (IBAction) alertHello:(id)sender;
+- (IBAction)showThird:(id)sender;
 
 @end
